@@ -1,0 +1,373 @@
+@font-face {
+    font-family: regular;
+    src: url(assets/Fonts/sf-pro-display_regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: regular;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    overflow: hidden;
+    position: relative;
+}
+#page1{
+    width: 100%;
+    min-height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 5vh;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.ri-menu-3-line{
+    display: none;
+}
+.hero1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/hero1.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1vw;
+}
+.hero1text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+padding-top: 10vh;
+
+}
+.hero1text h1{
+    color: white;
+    margin-bottom: 1vw;
+    font-size: 3vw;
+}
+.hero1text p{
+    color: white;
+    font-size:1.7vw;
+    margin-bottom: 1vw;
+}
+ .links {
+display: flex;
+flex-direction: row;
+white-space: nowrap;
+justify-content: center;
+align-items: center;
+gap: 2vw;
+
+}
+.links a{
+    text-decoration: none;
+    color: #3F8FF2;
+}
+.links a:hover{
+    border-bottom: 1px solid #3F8FF2;
+}
+.hero2{
+    background-image: url(assets/hero2.jpg);
+}
+.hero2text h1{
+    color: black;
+}
+.hero2text p{
+    color: black;
+}
+.hero3{
+    background-image: url(assets/hero3.jpg);
+}
+.hero3 img{
+    margin-bottom: 1vw;
+}
+#page2{
+    width: 100%;
+    min-height:100vh ;
+    position: relative;
+}
+.elements{
+    width: 100%;
+    display: flex;
+    position: relative;
+ 
+}
+.elem{
+    height: 60vh;
+    width: 50%;
+    background-image: url(assets/4-1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  
+
+
+}
+.elemtext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2vw;
+}
+
+.elem1{
+   
+    background-image: url(assets/4-2.jpg);
+}
+
+.elemtext p{
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    font-weight: 100;
+}
+.elemtext .links a{
+    font-size: 1.3vw;
+}
+.elem2{
+    background-image: url(https://images.unsplash.com/photo-1515204230490-1ad00b70ed3d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: bottom;
+}
+.elem2 .elemtext{
+    margin-right: 10vw;
+}
+
+
+.elem3 .elemtext{
+    text-align: center;
+}
+.elem3{
+    background-image:url(assets/hello.jpg);
+}
+.elem4{
+    background-image: url(https://image.sofmap.com/images/product/other/2133052052296_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.elem4 .elemtext{
+    text-align: center;
+}
+.elem5{
+    background-image: url(https://images.macrumors.com/t/KO7yAXGBTBP500-TUCIKMumUmrs=/1600x/article-new/2021/03/iPhone-trade-in-16x9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.elem5 p{
+    font-size: 2vw;
+}
+.slide-part{
+    width: 100%;
+height: 60vh;
+
+
+    overflow: hidden;
+    position: relative;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .respo-nav{
+    display: none;
+  }
+ 
+@media (max-width:720px) {
+ 
+    nav{
+        gap: 5vw;
+
+    }
+    nav a{
+        display: none;
+    }
+    .ri-menu-3-line{
+        display: initial;
+    }
+    .ri-apple-fill{
+       margin-right:60vw;
+    }
+    nav i{
+        font-size: 2.5vh;
+      
+    }
+    .respo-nav{
+        top: -100%;
+        position: absolute;
+        z-index: 999;
+        display: flex;
+      
+       
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+
+      }
+      .respo-nav a{
+        display: flex;
+        text-decoration: none;
+        color: black;
+       margin-top: 3vh;
+       margin-left: 3vw;
+       font-size:5vw;
+       font-weight: 600;
+       
+      }
+      .respo-nav i{
+        position: absolute;
+        right: 6%;
+       top: 2%;
+       font-size: 5vw;
+      }
+      #hero{
+        background-image: url(assets/resp1.jpg);
+      }
+      .hero1 h1{
+        font-size: 12vw;
+      }
+      .hero1 p{
+        font-size:4vw;
+      }
+      .hero1text{
+        padding-top: 12vh;
+        gap: 2vw;
+      }
+      .elements{
+        flex-direction: column;
+      }
+      .elem{
+        width: 100%;
+      }
+      .elem1{
+        width: 100%;
+      }
+      .elem .elemtext img{
+        height: 12.5vw;
+        margin-top: 5vh;
+      }
+      .elem .elemtext p{
+        font-size: 6vw;
+        text-align: center;
+      }
+       .elemtext .links a{
+        font-size: 4vw;
+        text-align: center;
+      }
+      .elem5 .elemtext p{
+        font-size: 6.9vw;
+        margin-bottom: 3vw;
+        margin-top: 4vh;
+    }
+    .elem2 .elemtext{
+       margin-right:15vh;
+    }
+    
+   
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .slide-part{
+        width: 100%;
+    height: 30vh;
+    margin-top: -10vh;
+    
+        overflow: hidden;
+        position: relative;
+    }
+    .hero1{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url(assets/hero1.jpg);
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 1vw;
+    }
+    .hero1text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    padding-top: 10vh;
+    
+    }
+    .hero1text h1{
+        color: white;
+        margin-bottom: 1vw;
+        font-size: 15vw;
+    }
+    .hero1text p{
+        color: white;
+        font-size:5vw;
+        margin-bottom: 5vw;
+    }
+     .links {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    
+    }
+    .links a{
+        text-decoration: none;
+        color: #3F8FF2;
+        font-size: 5vw;
+    }
+    .links a:hover{
+        border-bottom: 1px solid #3F8FF2;
+    }
+    .hero2{
+        background-image: url(assets/hero2.jpg);
+    }
+    .hero2text h1{
+        color: black;
+    }
+    .hero2text p{
+        color: black;
+    }
+    .hero3{
+        background-image: url(assets/hero3.jpg);
+    }
+    .hero3 img{
+        margin-bottom: 3vw;
+        scale: 0.9;
+        
+    }
+}
